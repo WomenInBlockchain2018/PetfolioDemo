@@ -4,6 +4,8 @@
 
 #### Your pet’s medical history on the blockchain so you can access it anywhere.
 
+=====
+
 
 This was a difficult project for us to build in 72 hours. We did the best we can to demonstrate a proof of concept, and meet the minimum qualification of deploying a blockchain application from our local development environment with multiple docker containers to a live server.
 
@@ -19,8 +21,12 @@ Interactive mockup on InVision: https://projects.invisionapp.com/share/3EHPKZ9JW
 
 # Our Team:
 
-Presenter & CEO - Davia (also a front-end developer)
-Product Manager - Shanon 
-UX Designer - Kristin 
-Market Research & Partnerships - Pam
-Full Stack / Blockchain Dev - Kai
+_Presenter & CEO_ - Davia (also a front-end developer)
+
+_Product Manager_ - Shanon 
+
+_UX Designer_ - Kristin 
+
+_Business Development_ - Pam
+
+_Full Stack / Blockchain Dev_ - Kai
