@@ -20,8 +20,6 @@ The potential for this project is much bigger than the demo we are able to techn
 <li> Interactive mockup on InVision: https://projects.invisionapp.com/share/3EHPKZ9JWP7 </li>
 
 <li> Our blockchain demo: https://www.petfolio.co </li>
- username: wm-tech
- password: testing
 
 </ul>
 
