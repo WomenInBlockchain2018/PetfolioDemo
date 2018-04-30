@@ -11,13 +11,18 @@ This was a difficult project for us to build in 72 hours. We did the best we can
 
 The potential for this project is much bigger than the demo we are able to technically implement in this short time. 
 
+
 Please refer to our landing page: https://womeninblockchain2018.github.io/petfolio_lp/
 
-Our slides and pitchdeck: https://docs.google.com/presentation/d/1VsO_T0plbzr-Ml8Y5ASYU7p-q0gBsdGbuUlKBnBvWPE/edit?usp=sharing
+<ul>
 
-Interactive mockup on InVision: https://projects.invisionapp.com/share/3EHPKZ9JWP7
+<li> Our slides and pitchdeck: https://docs.google.com/presentation/d/1VsO_T0plbzr-Ml8Y5ASYU7p-q0gBsdGbuUlKBnBvWPE/edit?usp=sharing </li>
 
-Our blockchain demo: https://www.petfolio.co
+<li> Interactive mockup on InVision: https://projects.invisionapp.com/share/3EHPKZ9JWP7 </li>
+
+<li> Our blockchain demo: https://www.petfolio.co </li>
+
+</ul>
 
 =====
 
