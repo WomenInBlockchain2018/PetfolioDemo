@@ -11,7 +11,7 @@ This was a difficult project for us to build in 72 hours. We did the best we can
 The potential for this project is much bigger than the demo we are able to technically implement in this short time. 
 
 
-#### Please refer to our landing page: https://womeninblockchain2018.github.io/petfolio_lp/
+#### Please refer to our landing page: https://petfolio.org
 
 <ul>
 
@@ -36,3 +36,37 @@ _UX Designer_ - Kristin
 _Business Development_ - Pam
 
 _Full Stack / Blockchain Dev_ - Kai
+
+<hr>
+
+# Blockchain Model:
+
+The basic demo on Hyperledger Composer consists of 2 participants, 2 assets, and 2 transactions. 
+
+`
+asset Pet identified by id {
+  o String id
+  o String name
+  --> Record[] records 
+  --> Vet vet
+  --> Owner owner
+}
+
+/**
+ * Track the appointment of a pet with a new health record
+ * @param {org.petfolio.Appointment} appointment - the appointment to be processed
+ * @transaction
+ */
+function Appointment(appointment) {
+
+    // set the new owner of the commodity
+    appointment.pet.records.push(appointment.record);
+    return getAssetRegistry('org.petfolio.Pet')
+        .then(function(assetRegistry) {
+
+            // persist the state of the commodity
+            return assetRegistry.update(appointment.pet);
+        });
+}
+
+`
