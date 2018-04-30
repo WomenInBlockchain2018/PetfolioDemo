@@ -48,6 +48,7 @@ In the first transaction (Appointment), a new health Record is added to the Pet 
 
 ### org.petfolio.cto
 
+```
 
 asset Pet identified by id {
   o String id
@@ -57,10 +58,12 @@ asset Pet identified by id {
   --> Owner owner
 }
 
+```
 
 ### logic.js
 
-`
+```
+
 /**
  * Track the appointment of a pet with a new health record
  * @param {org.petfolio.Appointment} appointment - the appointment to be processed
@@ -95,4 +98,4 @@ function Adoption(adoption) {
         });
 }
 
-`
+```
