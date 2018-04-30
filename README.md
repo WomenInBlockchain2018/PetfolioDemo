@@ -3,7 +3,7 @@
 
 #### Your pet’s medical history on the blockchain so you can access it anywhere.
 
-=====
+<hr>
 
 
 This was a difficult project for us to build in 72 hours. We did the best we can to demonstrate a proof of concept, and meet the minimum qualification of deploying a blockchain application from our local development environment with multiple docker containers to a live server.
@@ -11,7 +11,7 @@ This was a difficult project for us to build in 72 hours. We did the best we can
 The potential for this project is much bigger than the demo we are able to technically implement in this short time. 
 
 
-Please refer to our landing page: https://womeninblockchain2018.github.io/petfolio_lp/
+#### Please refer to our landing page: https://womeninblockchain2018.github.io/petfolio_lp/
 
 <ul>
 
@@ -23,7 +23,7 @@ Please refer to our landing page: https://womeninblockchain2018.github.io/petfol
 
 </ul>
 
-=====
+<hr>
 
 # Our Team:
 
