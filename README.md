@@ -36,3 +36,63 @@ _UX Designer_ - Kristin
 _Business Development_ - Pam
 
 _Full Stack / Blockchain Dev_ - Kai
+
+
+<hr>
+
+# Blockchain Model on Hyperledger Composer:
+
+The basic MVP demo consists of 2 participants, 2 assets, and 2 transactions. 
+
+In the first transaction (Appointment), a new health Record is added to the Pet asset on the ledger. The vet will have permission to make this transaction. In the second transaction, two Owners transfer ownership of a Pet, changing the relationship on all owners and asset involved.
+
+### org.petfolio.cto
+
+`
+asset Pet identified by id {
+  o String id
+  o String name
+  --> Record[] records 
+  --> Vet vet
+  --> Owner owner
+}
+`
+
+### logic.js
+
+`
+/**
+ * Track the appointment of a pet with a new health record
+ * @param {org.petfolio.Appointment} appointment - the appointment to be processed
+ * @transaction
+ */
+function Appointment(appointment) {
+
+    // set the new owner of the commodity
+    appointment.pet.records.push(appointment.record);
+    return getAssetRegistry('org.petfolio.Pet')
+        .then(function(assetRegistry) {
+
+            // persist the state of the commodity
+            return assetRegistry.update(appointment.pet);
+        });
+}
+
+/**
+ * Track the adoption of a pet from one owner to another
+ * @param {org.petfolio.Adoption} adoption - the adoption to be processed
+ * @transaction
+ */
+function Adoption(adoption) {
+
+    // set the new owner of the commodity
+    adoption.pet.owner = adoption.newOwner;
+    return getAssetRegistry('org.petfolio.Pet')
+        .then(function(assetRegistry) {
+
+            // persist the state of the commodity
+            return assetRegistry.update(adoption.pet);
+        });
+}
+
+`
