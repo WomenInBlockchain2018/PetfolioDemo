@@ -48,7 +48,7 @@ In the first transaction (Appointment), a new health Record is added to the Pet 
 
 ### org.petfolio.cto
 
-`
+
 asset Pet identified by id {
   o String id
   o String name
@@ -56,7 +56,7 @@ asset Pet identified by id {
   --> Vet vet
   --> Owner owner
 }
-`
+
 
 ### logic.js
 
