@@ -114,4 +114,4 @@ function Adoption(adoption) {
 
 ```
 
-Many many thanks to Waleed El Syed in Basel, Switzerland, our wonderful mentor and advisor, who we so lucky to find at the last minute on https://chat.hyperledger.org/ 
+Many many thanks to Waleed El Syed in Basel, Switzerland, our wonderful mentor and advisor, who we so lucky to find at the last minute on https://chat.hyperledger.org/ and who agreed to host our Docker containers on his server.
