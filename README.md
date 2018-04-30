@@ -1,6 +1,5 @@
-# petfolio
-
-## Passport for Your Pet:
+# Petfolio
+### Passport for Your Pet
 
 #### Your pet’s medical history on the blockchain so you can access it anywhere.
 
