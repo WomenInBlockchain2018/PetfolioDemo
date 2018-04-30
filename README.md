@@ -46,9 +46,11 @@ The basic MVP demo consists of 2 participants, 2 assets, and 2 transactions.
 
 In the first transaction (Appointment), a new health Record is added to the Pet asset on the ledger. The vet will have permission to make this transaction. In the second transaction, two Owners transfer ownership of a Pet, changing the relationship on all owners and asset involved.
 
-### org.petfolio.cto
+### Excerpt from our Model File:  org.petfolio.cto
 
 ```
+
+namespace org.petfolio
 
 asset Pet identified by id {
   o String id
@@ -58,9 +60,19 @@ asset Pet identified by id {
   --> Owner owner
 }
 
+transaction Appointment {
+  --> Record record
+  --> Pet pet
+}
+
+transaction Adoption {
+  --> Owner newOwner
+  --> Pet pet
+}
+
 ```
 
-### logic.js
+### Our Logic Functions:  logic.js
 
 ```
 
@@ -69,6 +81,7 @@ asset Pet identified by id {
  * @param {org.petfolio.Appointment} appointment - the appointment to be processed
  * @transaction
  */
+
 function Appointment(appointment) {
 
     // set the new owner of the commodity
@@ -86,6 +99,7 @@ function Appointment(appointment) {
  * @param {org.petfolio.Adoption} adoption - the adoption to be processed
  * @transaction
  */
+
 function Adoption(adoption) {
 
     // set the new owner of the commodity
