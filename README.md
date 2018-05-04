@@ -27,7 +27,7 @@ The potential for this project is much bigger than the demo we are able to techn
 
 # Our Team:
 
-_Presenter & CEO_ - Davia (also a front-end developer)
+_Presenter & Domain Expert_ - Davia (also a front-end developer)
 
 _Product Manager_ - Shanon 
 
